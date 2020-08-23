@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/trans">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/trans"
+        android:layout_marginBottom="120dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgIconAppForgotPass"
+            android:layout_width="105dp"
+            android:layout_height="95dp"
+            android:src="@drawable/ic_app_main"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvResetNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/utm_helve"
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/imgIconAppForgotPass"
+            android:layout_marginTop="23dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/text_forgot_pass_require"
+            android:gravity="center"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInfoReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/utm_helve_bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvResetNote"
+            android:layout_marginTop="13dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="44dp"
+            android:textColor="@color/color_white"
+            android:text="@string/text_info_reset_pass"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEmailAndPhoneNoToResetPass"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvInfoReset"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:hint="@string/text_mail_and_phone_no"
+            android:paddingLeft="18dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCheckValidateFPScreen"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/edtEmailAndPhoneNoToResetPass"
+            app:layout_constraintTop_toTopOf="@+id/edtEmailAndPhoneNoToResetPass"
+            app:layout_constraintBottom_toBottomOf="@+id/edtEmailAndPhoneNoToResetPass"
+            android:layout_marginLeft="10dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSendVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailAndPhoneNoToResetPass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_btn_round10_yellow"
+            android:textAllCaps="false"
+            android:text="@string/text_login1"
+            android:textColor="@color/color_white"
+            android:fontFamily="@font/utm_helve_bold"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btnSendVerifyCode"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:text="@string/text_dont_have_acc"
+                android:fontFamily="@font/utm_helve"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignupFromForgotPassScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:text="@string/text_register"
+                android:fontFamily="@font/utm_helve_bold"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

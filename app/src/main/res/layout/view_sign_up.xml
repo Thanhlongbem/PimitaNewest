@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gui_05"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgBackAva"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/ic_ava_default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUploadAvater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/utm_helve_bold"
+            android:text="@string/text_upload_avatar"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBackAva" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtFullNameSignup"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_full_name_edt"
+            android:hint="@string/text_full_name"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="13dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/tvUploadAvater" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEmailSignup"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint="@string/text_email_signup"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="13dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/edtFullNameSignup" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtPassSignup"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_pass_edt"
+            android:hint="@string/text_pass_signup"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="13dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailSignup" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAgeSignup"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_age_edt"
+            android:fontFamily="@font/utm_helve_italic"
+            android:gravity="center_vertical"
+            android:hint="@string/text_age"
+            android:paddingStart="12dp"
+            android:paddingEnd="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/gui_05"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassSignup" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGenderSignup"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_expand_edt"
+            android:fontFamily="@font/utm_helve_italic"
+            android:gravity="center_vertical"
+            android:hint="@string/text_gender"
+            android:paddingStart="12dp"
+            android:paddingEnd="14dp"
+            app:layout_constraintLeft_toRightOf="@+id/gui_05"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassSignup" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtPhoneSignup"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_phone"
+            android:hint="@string/text_phone_num_signup"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="13dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/tvGenderSignup" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edtChooseTypeAccount"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_round_corner_10"
+            android:drawableEnd="@drawable/ic_expand_edt"
+            android:fontFamily="@font/utm_helve_italic"
+            android:gravity="center_vertical"
+            android:hint="@string/text_types"
+            android:paddingStart="12dp"
+            android:paddingEnd="14dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhoneSignup" />
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbSavePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="40dp"
+            android:button="@drawable/check_box_background"
+            android:fontFamily="@font/utm_helve_italic"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/text_accept_policy"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtChooseTypeAccount" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUpOfSignUpScreen"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_btn_round10_yellow"
+            android:fontFamily="@font/utm_helve_bold"
+            android:text="@string/text_register"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/cbSavePass" />
+
+        <LinearLayout
+            android:id="@+id/lnBottomSu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignUpOfSignUpScreen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/utm_helve"
+                android:text="@string/text_haved_acc"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/utm_helve_bold"
+                android:text="@string/text_login"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/lnBottomSu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

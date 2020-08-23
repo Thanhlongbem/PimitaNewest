@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bacl.pimita.base.ui.RoundedView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btLeft"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    app:topLeftCornerRadius="10dp"
+    app:topRightCornerRadius="10dp"
+    app:bottomLeftCornerRadius="0dp"
+    app:bottomRightCornerRadius="0dp"
+    android:background="@color/trans">
+    <include
+        android:id="@+id/item_home"
+        layout="@layout/bottom_bar_item"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+    <include
+        android:id="@+id/item_search"
+        layout="@layout/bottom_bar_item"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+    <include
+        android:id="@+id/item_notification"
+        layout="@layout/bottom_bar_item"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+    <include
+        android:id="@+id/item_profile"
+        layout="@layout/bottom_bar_item"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+    <include
+        android:id="@+id/item_more"
+        layout="@layout/bottom_bar_item"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+
+</com.bacl.pimita.base.ui.RoundedView>

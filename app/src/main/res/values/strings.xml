@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Pimita</string>
+    <string name="facebook_app_id">1225980421079668</string>
+    <string name="fb_login_protocol_scheme">fb1225980421079668</string>
+
+
+    <string name="text_slogan">Kết Nối Đam Mê</string>
+    <string name="text_loading_from_server">Đang kết nối dữ liệu từ máy chủ</string>
+    <string name="text_version">V 23.02</string>
+    <string name="login_via_facabook">Facebook</string>
+    <string name="login_via_gmail">Google</string>
+    <string name="text_email_login">Email:</string>
+    <string name="text_pass_login">Mật khẩu:</string>
+    <string name="text_save_pass">Nhớ Mật Khẩu</string>
+    <string name="text_forgot_pass">Quên mật khẩu?</string>
+    <string name="text_login">Đăng nhập</string>
+    <string name="text_login1">Đăng Nhập</string>
+    <string name="text_dont_have_acc">Chưa có tài khoản?</string>
+    <string name="text_haved_acc">Đã có tài khoản?</string>
+    <string name="text_register">Đăng Ký</string>
+    <string name="text_upload_avatar">TẢI LÊN ẢNH ĐẠI DIỆN</string>
+    <string name="text_full_name">Họ và tên</string>
+    <string name="text_account_name">Tài Khoản</string>
+    <string name="text_pass_signup">Mật Khẩu</string>
+    <string name="text_age">Tuổi</string>
+    <string name="text_gender">Giới tính</string>
+    <string name="text_email_signup">Email</string>
+    <string name="text_phone_num_signup">Số điện thoại</string>
+    <string name="text_types">Lựa chọn</string>
+    <string name="text_accept_policy">Tôi đã đọc kỹ điều khoản và thực hiện theo quy định</string>
+    <string name="text_forgot_pass_require">Nếu bạn Quên Mật Khẩu. Vui lòng cung cấp cho chúng tôi những thông tin sau:</string>
+    <string name="text_info_reset_pass">Email/Số điện thoại khôi phục:</string>
+    <string name="text_mail_and_phone_no">Email/Số điện thoại</string>
+    <string name="text_send_verify_code">Gửi mã xác nhận</string>
+    <string name="text_title_set_pass">Đặt lại Mật khẩu</string>
+    <string name="text_change_pass">Đổi mật khẩu</string>
+    <string name="text_input_verify_note">Mã xác nhận đã được gửi đến email/số điện thoại. Vui lòng:</string>
+    <string name="text_input_verify">Nhập mã xác nhận</string>
+    <string name="text_verify_note">Mã xác nhận</string>
+    <string name="text_verify">Xác nhận</string>
+    <string name="text_change_pass_success_note">Chúc mừng bạn đã <font fgcolor='#F47121'><b>Đổi Mật Khẩu </b></font>thành công! \n\n Vui lòng nhấn <font fgcolor='#F47121'><b>Đăng Nhập </b></font>để tiếp tục</string>
+    <string name="text_email_invalid">Email invalid</string>
+    <string name="text_pass_invalid">Password invalid</string>
+    <string name="text_new_pass">Mật khẩu mới</string>
+    <string name="text_re_enter_new_pass">Nhập lại mật khẩu mới</string>
+    <string name="text_home">Trang chủ</string>
+    <string name="text_search">Tìm kiếm</string>
+    <string name="text_notify">Thông báo</string>
+    <string name="text_profile">Tài khoản</string>
+    <string name="text_more">Khác</string>
+    <string name="text_error">Request error</string>
+
+    <string name="network_joke">Mạng chưa được kết nối</string>
+    <string name="network_require">Kiểm tra kết nối WiFi hoặc dữ liệu di động của bạn và thử lại</string>
+    <string name="retry">Thử lại</string>
+    <string name="view_settings">Xem cài đặt</string>
+
+
+</resources>

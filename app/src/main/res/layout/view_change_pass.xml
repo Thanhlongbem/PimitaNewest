@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/trans">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/trans"
+        android:layout_marginBottom="120dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgIconAppChangePass"
+            android:layout_width="105dp"
+            android:layout_height="95dp"
+            android:src="@drawable/ic_app_main"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChangePassNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/utm_helve"
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/imgIconAppChangePass"
+            android:layout_marginTop="29dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Chúc mừng email: thanhlongny@gmail.com đã khôi phục lại mật khẩu"
+            android:lineSpacingExtra="5dp"
+            android:gravity="center"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvResetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/utm_helve_bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangePassNote"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="44dp"
+            android:textColor="@color/color_white"
+            android:text="@string/text_title_set_pass"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEnterNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvResetPass"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_base_round_corner_edittext"
+            android:hint="@string/text_new_pass"
+            android:paddingLeft="18dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCheckValidateNewPass"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/edtEnterNewPass"
+            app:layout_constraintTop_toTopOf="@+id/edtEnterNewPass"
+            app:layout_constraintBottom_toBottomOf="@+id/edtEnterNewPass"
+            android:layout_marginLeft="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtReEnterNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtEnterNewPass"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_base_round_corner_edittext"
+            android:hint="@string/text_re_enter_new_pass"
+            android:paddingLeft="18dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCheckValidateReEnterNewPass"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/edtReEnterNewPass"
+            app:layout_constraintTop_toTopOf="@+id/edtReEnterNewPass"
+            app:layout_constraintBottom_toBottomOf="@+id/edtReEnterNewPass"
+            android:layout_marginLeft="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChangePass"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtReEnterNewPass"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_btn_round10_yellow"
+            android:textAllCaps="false"
+            android:text="@string/text_change_pass"
+            android:textColor="@color/color_white"
+            android:fontFamily="@font/utm_helve_bold"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btnChangePass"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:text="@string/text_dont_have_acc"
+                android:fontFamily="@font/utm_helve"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignupFromForgotPassScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:text="@string/text_register"
+                android:fontFamily="@font/utm_helve_bold"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gui_login_ver_05"
+            app:layout_constraintGuide_percent="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
